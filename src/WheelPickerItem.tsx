@@ -121,7 +121,7 @@ const WheelPickerItem: React.FC<ItemProps> = ({
         {  height, opacity, transform: [{ translateY }, { rotateX }, { scale }]},
       ]}
     >
-      <Text style={textStyle}>{option}</Text>
+      <Text style={textStyle} allowFontScaling={false}>{option}</Text>
     </Animated.View>
   );
 };
